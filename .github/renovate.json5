@@ -1,3 +1,5 @@
 {
-  extends: "../recommend.json",
+  extends: [
+    "github>camptocamp/gs-renovate-config-preset#0.1.0:recommended.json5",
+  ],
 }
