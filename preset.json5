@@ -1,0 +1,12 @@
+{
+  regexManagers: [
+    /** Update the preset tag */
+    {
+      fileMatch: ["^\\.github/renovate\\.json5$"],
+      matchStrings: [
+        '"github>(?<depName>[^\\s]+)(:.*)?#(?<currentValue>[0-9\\.]+)"',
+      ],
+      datasourceTemplate: "github-tags",
+    },
+  ],
+}
