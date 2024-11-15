@@ -1,12 +1,13 @@
 {
   extends: [
-    "local>:base.json5",
-    "local>:stabilization-branches.json5",
-    "local>:ci.json5",
-    "local>:pre-commit.json5",
-    "local>:python.json5",
-    "local>:python-version.json5",
-    "local>:json-schema.json5",
-    "local>:shellcheck.json5",
+    "github>camptocamp/gs-renovate-config-preset:base.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:self.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:stabilization-branches.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:ci.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:pre-commit.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:python.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:python-version.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:json-schema.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:shellcheck.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
   ],
 }

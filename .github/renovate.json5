@@ -1,5 +1,8 @@
 {
+  customEnvVariables: {
+    CAMPTOCAMP_PRESET_VERSION: "0.2.4",
+  },
   extends: [
-    "github>camptocamp/gs-renovate-config-preset:recommended.json5#0.2.3",
+    "github>camptocamp/gs-renovate-config-preset:recommended.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
   ],
 }
