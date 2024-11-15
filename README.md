@@ -5,16 +5,18 @@ To use it, add in your `.github/renovate.json5`:
 ```json5
 {
   extends: [
-    "github>camptocamp/gs-renovate-config-preset#<release>:recommended.json5",
+    "github>camptocamp/gs-renovate-config-preset:recommended.json5#<release>",
     // Recommended configuration includes:
-    "github>camptocamp/gs-renovate-config-preset#<release>:base.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:stabilization-branches.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:ci.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:pre-commit.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:python.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:python-version.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:json-schema.json5",
-    "github>camptocamp/gs-renovate-config-preset#<release>:shellcheck.json5",
+    "github>camptocamp/gs-renovate-config-preset:base.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:stabilization-branches.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:ci.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:pre-commit.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:python.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:python-version.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:json-schema.json5#<release>",
+    "github>camptocamp/gs-renovate-config-preset:shellcheck.json5#<release>",
   ],
 }
 ```
+
+See also the related [Renovate documentation](https://docs.renovatebot.com/config-presets/).
