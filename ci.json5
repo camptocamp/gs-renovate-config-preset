@@ -1,0 +1,16 @@
+{
+  packageRules: [
+    /** Group the dev dependency update */
+    {
+      matchDepTypes: ["devDependencies"],
+      groupName: "CI dependencies",
+      automerge: true,
+    },
+    /** Group and auto merge the CI dependencies */
+    {
+      matchFileNames: [".github/**", ".pre-commit-config.yaml", "ci/**", "**.txt"],
+      groupName: "CI dependencies",
+      automerge: true,
+    },
+  ],
+}

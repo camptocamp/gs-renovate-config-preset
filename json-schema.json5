@@ -1,0 +1,12 @@
+{
+  regexManagers: [
+    /** Do update on the schema present in the YAML files */
+    {
+      fileMatch: ["^.*\\.yaml$"],
+      matchStrings: [
+        ".*https://raw\\.githubusercontent\\.com/(?<depName>[^\\s]+)/(?<currentValue>[0-9\\.]+)/.*",
+      ],
+      datasourceTemplate: "github-tags",
+    },
+  ],
+}
