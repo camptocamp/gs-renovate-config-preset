@@ -1,8 +1,9 @@
 {
   "pre-commit": { enabled: true },
-  regexManagers: [
+  customManagers: [
     /** Do updates on pre-commit additional dependencies */
     {
+      customType: "regex",
       fileMatch: ["^\\.pre\\-commit\\-config\\.yaml$"],
       matchStrings: [
         " +- '?(?<depName>[^' @=]+)(@|==)(?<currentValue>[^' @=]+)'? # (?<datasource>.+)",
