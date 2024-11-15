@@ -1,8 +1,13 @@
 {
-  customEnvVariables: {
-    CAMPTOCAMP_PRESET_VERSION: "0.2.4",
-  },
   extends: [
-    "github>camptocamp/gs-renovate-config-preset:recommended.json5#{{env.CAMPTOCAMP_PRESET_VERSION}}",
+    "github>camptocamp/gs-renovate-config-preset:base.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:self.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:stabilization-branches.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:ci.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:pre-commit.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:python.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:python-version.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:json-schema.json5#0.2.5",
+    "github>camptocamp/gs-renovate-config-preset:shellcheck.json5#0.2.5",
   ],
 }

@@ -5,10 +5,8 @@ To use it, add in your `.github/renovate.json5`:
 ```json5
 {
   extends: [
-    "github>camptocamp/gs-renovate-config-preset:recommended.json5#<release>",
-    // Recommended configuration includes:
+    // Recommended configuration:
     "github>camptocamp/gs-renovate-config-preset:base.json5#<release>",
-    "github>camptocamp/gs-renovate-config-preset:self.json5#<release>",
     "github>camptocamp/gs-renovate-config-preset:stabilization-branches.json5#<release>",
     "github>camptocamp/gs-renovate-config-preset:ci.json5#<release>",
     "github>camptocamp/gs-renovate-config-preset:pre-commit.json5#<release>",
