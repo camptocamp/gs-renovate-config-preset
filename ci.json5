@@ -8,7 +8,12 @@
     },
     /** Group and auto merge the CI dependencies */
     {
-      matchFileNames: [".github/**", ".pre-commit-config.yaml", "ci/**", "**.txt"],
+      matchFileNames: [
+        ".github/**",
+        ".pre-commit-config.yaml",
+        "ci/**",
+        "**.txt",
+      ],
       groupName: "CI dependencies",
       automerge: true,
     },
