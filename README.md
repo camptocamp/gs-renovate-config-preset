@@ -11,6 +11,7 @@ To use it, add in your `.github/renovate.json5`:
     "github>camptocamp/gs-renovate-config-preset#<release>:stabilization-branches.json5",
     "github>camptocamp/gs-renovate-config-preset#<release>:ci.json5",
     "github>camptocamp/gs-renovate-config-preset#<release>:pre-commit.json5",
+    "github>camptocamp/gs-renovate-config-preset#<release>:python.json5",
     "github>camptocamp/gs-renovate-config-preset#<release>:python-version.json5",
     "github>camptocamp/gs-renovate-config-preset#<release>:json-schema.json5",
     "github>camptocamp/gs-renovate-config-preset#<release>:shellcheck.json5",

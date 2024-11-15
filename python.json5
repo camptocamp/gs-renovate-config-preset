@@ -1,0 +1,9 @@
+{
+  packageRules: [
+    /** Ungroup Python dependencies */
+    {
+      matchDepNames: ["python"],
+      groupName: "Python",
+    },
+  ],
+}
