@@ -1,12 +1,12 @@
 {
   extends: [
-    "./base.json5",
-    "./stabilization-branches.json5",
-    "./ci.json5",
-    "./pre-commit.json5",
-    "./python.json5",
-    "./python-version.json5",
-    "./json-schema.json5",
-    "./shellcheck.json5",
+    "local>base.json5",
+    "local>stabilization-branches.json5",
+    "local>ci.json5",
+    "local>pre-commit.json5",
+    "local>python.json5",
+    "local>python-version.json5",
+    "local>json-schema.json5",
+    "local>shellcheck.json5",
   ],
 }
