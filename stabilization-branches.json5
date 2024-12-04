@@ -1,4 +1,5 @@
 {
+  baseBranches: ['/^[0-9]+\\.[0-9]+$/'],
   packageRules: [
     /** Accept only the patch on stabilization branches */
     {
