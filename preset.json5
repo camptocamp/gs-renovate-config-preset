@@ -2,12 +2,10 @@
   customManagers: [
     /** Update the preset tag */
     {
-      customType: "regex",
-      fileMatch: ["^\\.github/renovate\\.json5$"],
-      matchStrings: [
-        '"github>(?<depName>[^\\s:]+)(:.*)?#(?<currentValue>[0-9\\.]+)"',
-      ],
-      datasourceTemplate: "github-tags",
+      customType: 'regex',
+      fileMatch: ['^\\.github/renovate\\.json5$'],
+      matchStrings: ['"github>(?<depName>[^\\s:]+)(:.*)?#(?<currentValue>[0-9\\.]+)"'],
+      datasourceTemplate: 'github-tags',
     },
   ],
 }

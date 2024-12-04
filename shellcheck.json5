@@ -2,8 +2,8 @@
   packageRules: [
     /** Support the 4 parts of shellcheck-py version with a v prefix */
     {
-      versioning: "regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.(?<build>\\d+)$",
-      matchDepNames: ["shellcheck-py/shellcheck-py"],
+      versioning: 'regex:^v(?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)\\.(?<build>\\d+)$',
+      matchDepNames: ['shellcheck-py/shellcheck-py'],
     },
   ],
 }
