@@ -20,5 +20,11 @@
       matchFileNames: ['.python-version'],
       versioning: 'regex:^(?<major>\\d+)\\.(?<minor>\\d+)$',
     },
+    /** Don't update the Python version in the `pyproject.toml` file */
+    {
+      matchFileNames: ['pyproject.toml'],
+      matchDepNames: ['python'],
+      enabled: false,
+    },
   ],
 }
