@@ -4,7 +4,7 @@
     {
       customType: 'regex',
       fileMatch: ['^\\.github/renovate\\.json5$'],
-      matchStrings: ['"github>(?<depName>[^\\s:]+)(:.*)?#(?<currentValue>[0-9\\.]+)"'],
+      matchStrings: ['["\']github>(?<depName>[^\\s:]+)(:.*)?#(?<currentValue>[0-9\\.]+)["\']'],
       datasourceTemplate: 'github-tags',
     },
   ],
