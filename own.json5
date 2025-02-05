@@ -1,0 +1,21 @@
+{
+  packageRules: [
+    /** Immediately update own maintained packages */
+    {
+      matchDepNames: [
+        'prospector',
+        'prospector-profile-duplicated',
+        'prospector-profile-utils',
+        'c2cciutils',
+        'c2cwsgiutils',
+        'tag-publish',
+        'jsonschema-gentypes',
+        'jsonschema2md',
+        'helm-common',
+        'gs-renovate-config-preset',
+      ],
+      schedule: 'after 5am',
+      minimumReleaseAge: '0',
+    },
+  ],
+}
