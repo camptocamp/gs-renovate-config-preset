@@ -1,0 +1,11 @@
+{
+  packageRules: [
+    /** Immediately update security related packages and pytz */
+    {
+      matchDepNames: ['cryptography', 'pyOpenSSL', 'pytz'],
+      enabled: true,
+      schedule: 'after 5am',
+      minimumReleaseAge: '0',
+    },
+  ],
+}
