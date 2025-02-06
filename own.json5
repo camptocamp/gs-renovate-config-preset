@@ -2,6 +2,7 @@
   packageRules: [
     /** Immediately update own maintained packages */
     {
+      groupName: 'own packages',
       matchDepNames: [
         'prospector',
         'prospector-profile-duplicated',
@@ -16,6 +17,7 @@
       ],
       schedule: 'after 5am',
       minimumReleaseAge: '0',
+      automerge: true,
     },
   ],
 }
