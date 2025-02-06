@@ -1,0 +1,10 @@
+{
+  packageRules: [
+    /** Group and auto merge the patch updates */
+    {
+      groupName: 'all patch/minor versions',
+      matchUpdateTypes: ['patch', 'minor'],
+      automerge: true,
+    },
+  ],
+}
