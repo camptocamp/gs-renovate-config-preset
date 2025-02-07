@@ -1,0 +1,9 @@
+{
+  packageRules: [
+    /** Docker images versioning */
+    {
+      matchDatasources: ['docker'],
+      versioning: 'loose',
+    },
+  ],
+}
