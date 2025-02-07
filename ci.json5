@@ -12,5 +12,11 @@
       groupName: 'CI dependencies',
       automerge: true,
     },
+    /** Group and auto merge the Prospector and Poetry dependencies */
+    {
+      matchDepNames: ['prospector', 'prospector-.*', 'ruff', 'poetry', 'poetry-.*'],
+      groupName: 'CI dependencies',
+      automerge: true,
+    },
   ],
 }
