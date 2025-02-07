@@ -6,6 +6,7 @@
   separateMajorMinor: true,
   prHourlyLimit: 0,
   prConcurrentLimit: 0,
+  semanticCommits: 'disabled',
   html: {
     fileMatch: ['\\.html?$', '\\.html?.mako$'],
   },
