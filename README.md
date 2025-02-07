@@ -13,6 +13,7 @@ To use it, add in your `.github/renovate.json5`:
     'github>camptocamp/gs-renovate-config-preset:pre-commit.json5#<release>',
     'github>camptocamp/gs-renovate-config-preset:python.json5#<release>',
     'github>camptocamp/gs-renovate-config-preset:security.json5#<release>',
+    'github>camptocamp/gs-renovate-config-preset:docker.json5#<release>',
     'github>camptocamp/gs-renovate-config-preset:json-schema.json5#<release>',
     'github>camptocamp/gs-renovate-config-preset:shellcheck.json5#<release>',
   ],
@@ -30,6 +31,7 @@ See also the related [Renovate documentation](https://docs.renovatebot.com/confi
 - `pre-commit.json5`: Get pre-commit hook dependencies.
 - `python.json5`: Handles Python version management.
 - `security.json5`: Ensures immediately update security related and critical packages (including `pytz`).
+- `docker.json5`: Some image version parsing for Docker images.
 - `own.json5`: Ensures immediately updates for internal packages.
 - `json-schema.json5`: Get JSON Schema references in YAML files.
 - `shellcheck.json5`: Provides correct version parsing for ShellCheck.
