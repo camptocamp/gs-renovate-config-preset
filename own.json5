@@ -15,7 +15,7 @@
         'helm-common',
         'gs-renovate-config-preset',
       ],
-      schedule: 'after 5am',
+      schedule: 'before 8am',
       minimumReleaseAge: '0',
       automerge: true,
     },
