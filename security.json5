@@ -3,7 +3,7 @@
     /** Immediately update security related packages and pytz */
     {
       groupName: 'security packages',
-      matchDepNames: ['cryptography', 'pyOpenSSL', 'pytz'],
+      matchDepNames: ['cryptography', 'pyOpenSSL', 'certifi', 'pytz'],
       enabled: true,
       schedule: 'after 5am',
       minimumReleaseAge: '0',
