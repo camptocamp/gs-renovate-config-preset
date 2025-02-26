@@ -6,6 +6,8 @@
       matchDepNames: [
         'prospector',
         'prospector-dev/prospector',
+        'landscape/prospector',
+        'PyCQA/prospector',
         'prospector-profile-duplicated',
         'prospector-profile-utils',
         'c2cciutils',
