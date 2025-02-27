@@ -21,6 +21,7 @@
         'helm-common',
         'gs-renovate-config-preset',
         'camptocamp/gs-renovate-config-preset',
+        'sbrunner/hooks',
       ],
       schedule: 'before 8am',
       minimumReleaseAge: '0',
