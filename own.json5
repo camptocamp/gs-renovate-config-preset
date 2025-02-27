@@ -23,7 +23,7 @@
         'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
       ],
-      schedule: 'before 8am',
+      schedule: 'before 6am',
       minimumReleaseAge: '0',
       automerge: true,
     },
