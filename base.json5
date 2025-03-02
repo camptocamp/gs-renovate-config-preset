@@ -15,4 +15,23 @@
     automerge: true,
     schedule: ['after 5pm on the last day of the month', 'on the first day of the month'],
   },
+  packageRules: [
+    /** Only LTS version of Node */
+    {
+      matchDepNames: ['node'],
+      allowedVersions: '/[13579]$/',
+      enabled: false,
+    },
+    /** Only LTS Ubuntu versions */
+    {
+      matchPackageNames: ['ubuntu'],
+      enabled: false,
+      allowedVersions: '/\.10$/',
+    },
+    {
+      matchPackageNames: ['ubuntu'],
+      enabled: false,
+      allowedVersions: '/.*[13579]\.04$/',
+    },
+  ],
 }
