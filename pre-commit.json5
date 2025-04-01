@@ -8,4 +8,12 @@
       matchStrings: [" +- '?(?<depName>[^' @=]+)(@|==)(?<currentValue>[^' @=]+)'? # (?<datasource>.+)"],
     },
   ],
+  packageRules: [
+    /** Blacklist sirwart/ripsecrets version v0.1.9 */
+    {
+      matchPackageNames: ['sirwart/ripsecrets'],
+      allowedVersions: '!=v0.1.9',
+      description: 'Blacklist sirwart/ripsecrets version v0.1.9',
+    },
+  ],
 }
