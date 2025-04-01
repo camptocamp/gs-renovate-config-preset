@@ -5,5 +5,11 @@
       matchDatasources: ['docker'],
       versioning: 'loose',
     },
+    /** Don't have Redis versions like 32bit-stretch */
+    {
+      matchDatasources: ['docker'],
+      matchPackageNames: ['redis'],
+      allowedVersions: '/^\\d+\\.\\d+\\.\\d+$/',
+    },
   ],
 }
