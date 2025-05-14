@@ -22,5 +22,12 @@
       matchBaseBranches: ['/^[0-9]+\\.[0-9]+$/'],
       minimumReleaseAge: '7 days',
     },
+    /** Don't update Python packages that contain types */
+    {
+      matchBaseBranches: ['/^[0-9]+\\.[0-9]+$/'],
+      matchDepNames: ['types-*'],
+      matchDatasources: ['pypi'],
+      enabled: false,
+    },
   ],
 }
