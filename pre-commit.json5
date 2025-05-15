@@ -5,7 +5,13 @@
     {
       customType: 'regex',
       fileMatch: ['^\\.pre\\-commit\\-config\\.yaml$'],
-      matchStrings: [" +- '?(?<depName>[^' @=]+)(@|==)(?<currentValue>[^' @=]+)'? # (?<datasource>.+)"],
+      matchStrings: [
+        // Matches dependency definitions in the format:
+        // - package==1.2.3
+        // - package[extra]==1.2.3
+        // - package@1.2.3
+        " +- '?(?<depName>[^' @=\\[\\]]+)(\\[[^\\]]+\\])?(@|==)(?<currentValue>[^' @=]+)'? # (?<datasource>.+)",
+      ],
     },
   ],
   packageRules: [
