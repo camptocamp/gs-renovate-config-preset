@@ -23,6 +23,7 @@
         'gs-renovate-config-preset',
         'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
+        'sbrunner/python-version-hook',
       ],
       schedule: 'before 6am',
       minimumReleaseAge: '0',
