@@ -29,5 +29,21 @@
       matchDatasources: ['pypi'],
       enabled: false,
     },
+    /** Minimal version of Poetry is 1.6.1 */
+    {
+      matchBaseBranches: ['/^[0-9]+\\.[0-9]+$/'],
+      matchDepNames: ['poetry'],
+      matchCurrentVersion: '<1.6.1',
+      allowedVersions: '1.6.1',
+      groupName: 'Fix CVE',
+    },
+    /** Minimal version of poetry-plugin-export is 1.5.0 */
+    {
+      matchBaseBranches: ['/^[0-9]+\\.[0-9]+$/'],
+      matchDepNames: ['poetry-plugin-export'],
+      matchCurrentVersion: '<1.5.0',
+      allowedVersions: '1.5.0',
+      groupName: 'Fix CVE',
+    },
   ],
 }
