@@ -31,7 +31,6 @@
     },
     /** Minimal version of Poetry is 1.6.1 */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^prod-.*$/'],
       matchDepNames: ['poetry'],
       matchCurrentVersion: '<1.6.1',
       allowedVersions: '1.6.1',
@@ -40,7 +39,6 @@
     },
     /** Minimal version of poetry-plugin-export is 1.5.0 */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^prod-.*$/'],
       matchDepNames: ['poetry-plugin-export'],
       matchCurrentVersion: '<1.5.0',
       allowedVersions: '1.5.0',
