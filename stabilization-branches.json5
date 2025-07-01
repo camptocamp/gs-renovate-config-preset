@@ -34,16 +34,18 @@
       matchDepNames: ['poetry'],
       matchCurrentVersion: '<1.6.1',
       allowedVersions: '1.6.1',
-      groupName: 'Fix CVE',
+      groupName: 'security packages',
       enabled: true,
+      schedule: 'after 5am',
     },
     /** Minimal version of poetry-plugin-export is 1.5.0 */
     {
       matchDepNames: ['poetry-plugin-export'],
       matchCurrentVersion: '<1.5.0',
       allowedVersions: '1.5.0',
-      groupName: 'Fix CVE',
+      groupName: 'security packages',
       enabled: true,
+      schedule: 'after 5am',
     },
   ],
 }
