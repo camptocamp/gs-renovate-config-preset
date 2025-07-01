@@ -27,10 +27,5 @@
       matchDepNames: ['python'],
       enabled: false,
     },
-    /** Don't have letter in the Python version (avoid version like 3.14.0a5-windowsservercore-ltsc2025) */
-    {
-      matchDepNames: ['python'],
-      allowedVersions: '/.*[a-z].*/',
-    },
   ],
 }
