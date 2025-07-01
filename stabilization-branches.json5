@@ -47,5 +47,14 @@
       enabled: true,
       schedule: 'after 5am',
     },
+    /** Minimal version of poetry-plugin-tweak-dependencies-version is 1.5.2 */
+    {
+      matchDepNames: ['poetry-plugin-tweak-dependencies-version'],
+      matchCurrentVersion: '<1.5.2',
+      allowedVersions: '1.5.2',
+      groupName: 'security packages',
+      enabled: true,
+      schedule: 'after 5am',
+    },
   ],
 }
