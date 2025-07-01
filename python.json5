@@ -19,6 +19,7 @@
     {
       matchFileNames: ['.python-version'],
       versioning: 'regex:^(?<major>\\d+)\\.(?<minor>\\d+)$',
+      allowedVersions: '/^[0-9]+\\.[0-9]+$/',
     },
     /** Don't update the Python version in the `pyproject.toml` file */
     {
