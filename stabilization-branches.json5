@@ -56,5 +56,14 @@
       enabled: true,
       schedule: 'after 5am',
     },
+    /** Minimal version of poetry-dynamic-versioning is 0.21.5 */
+    {
+      matchDepNames: ['poetry-dynamic-versioning'],
+      matchCurrentVersion: '<0.21.5',
+      allowedVersions: '0.21.5',
+      groupName: 'security packages',
+      enabled: true,
+      schedule: 'after 5am',
+    },
   ],
 }
