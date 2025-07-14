@@ -65,5 +65,11 @@
       enabled: true,
       schedule: 'after 5am',
     },
+    /** Always have the latest version of pre-commit */
+    {
+      matchDepNames: ['pre-commit'],
+      enabled: true,
+      automerge: true,
+    },
   ],
 }
