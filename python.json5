@@ -17,13 +17,13 @@
     },
     /** In file `.python-version`, use the `<major>.<minor>` version */
     {
-      matchFileNames: ['.python-version'],
+      matchFileNames: ['.python-version', '**/.python-version'],
       versioning: 'regex:^(?<major>\\d+)\\.(?<minor>\\d+)$',
       allowedVersions: '/^[0-9]+\\.[0-9]+$/',
     },
     /** Don't update the Python version in the `pyproject.toml` file */
     {
-      matchFileNames: ['pyproject.toml'],
+      matchFileNames: ['pyproject.toml', '**/pyproject.toml'],
       matchDepNames: ['python'],
       enabled: false,
     },
