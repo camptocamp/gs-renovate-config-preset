@@ -3,7 +3,7 @@
   packageRules: [
     /** Accept only the patch on stabilization branches */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^prod-.*$/'],
+      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^prod-.*$/'],
       matchUpdateTypes: [
         'major',
         'minor',
