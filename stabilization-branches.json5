@@ -3,7 +3,7 @@
   packageRules: [
     /** Accept only the patch on stabilization branches */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^prod-.*$/'],
+      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^int-.*$/'],
       matchUpdateTypes: [
         'major',
         'minor',
@@ -19,12 +19,12 @@
     },
     /** Packages published very recently are not pushed to stabilization branches for security reasons */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^prod-.*$/'],
+      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^int-.*$/'],
       minimumReleaseAge: '7 days',
     },
     /** Don't update Python packages that contain types */
     {
-      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^prod-.*$/'],
+      matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^int-.*$/'],
       matchDepNames: ['types-*'],
       matchDatasources: ['pypi'],
       enabled: false,
