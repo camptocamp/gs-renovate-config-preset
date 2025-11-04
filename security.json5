@@ -1,4 +1,8 @@
 {
+  vulnerabilityAlerts: {
+    enabled: true,
+  },
+  osvVulnerabilityAlerts: true,
   packageRules: [
     /** Immediately update security related packages and pytz */
     {
