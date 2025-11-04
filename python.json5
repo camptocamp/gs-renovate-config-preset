@@ -21,11 +21,22 @@
       versioning: 'regex:^(?<major>\\d+)\\.(?<minor>\\d+)$',
       allowedVersions: '/^[0-9]+\\.[0-9]+$/',
     },
-    /** Don't update the Python version in the `pyproject.toml` file */
+    /** Don't update the Python version in the `pyproject.toml`, `.python-version`, and workflow files */
     {
-      matchFileNames: ['pyproject.toml', '**/pyproject.toml'],
+      matchFileNames: [
+        'pyproject.toml',
+        '**/pyproject.toml',
+        '.python-version',
+        '**/.python-version',
+        '.github/workflows/**.ya?ml',
+      ],
       matchDepNames: ['python'],
       enabled: false,
+    },
+    /** Temporarily disable updates of `pylint` to version 4.x to avoid issues with `pylint-django` */
+    {
+      matchDepNames: ['pylint'],
+      allowedVersions: '!/^4\\./',
     },
   ],
 }
