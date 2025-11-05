@@ -28,7 +28,7 @@
         '**/pyproject.toml',
         '.python-version',
         '**/.python-version',
-        '.github/workflows/**.ya?ml',
+        '.github/workflows/*.yaml',
       ],
       matchDepNames: ['python'],
       enabled: false,
