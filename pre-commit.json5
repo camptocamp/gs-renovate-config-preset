@@ -21,5 +21,12 @@
       allowedVersions: '!=v0.1.9',
       description: 'Blacklist sirwart/ripsecrets version v0.1.9',
     },
+    /** Minimal version of codespell-project/codespell to v2.4.1 */
+    {
+      matchPackageNames: ['codespell-project/codespell'],
+      matchCurrentVersion: '<2.4.0',
+      allowedVersions: '<2.5.0,>=2.4.1',
+      enabled: true,
+    },
   ],
 }
