@@ -4,9 +4,9 @@ repos:
     hooks:
       - id: prettier
         additional_dependencies:
-          - prettier@3.6.2 # npm
+          - prettier@3.7.3 # npm
   - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 42.27.0
+    rev: 42.27.3
     hooks:
       - id: renovate-config-validator
         files: .*\.json5$
