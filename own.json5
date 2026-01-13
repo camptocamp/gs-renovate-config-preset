@@ -13,6 +13,7 @@
         'c2cciutils',
         'c2cwsgiutils',
         'camptocamp/c2cwsgiutils',
+        'c2casgiutils',
         'tag-publish',
         'camptocamp/tag-publish',
         'jsonschema-gentypes',
