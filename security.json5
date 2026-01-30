@@ -1,6 +1,7 @@
 {
   vulnerabilityAlerts: {
     enabled: true,
+    labels: ['security'],
   },
   osvVulnerabilityAlerts: true,
   packageRules: [
@@ -9,6 +10,13 @@
       groupName: 'security packages',
       matchDepNames: ['cryptography', 'pyOpenSSL', 'pyopenssl', 'certifi', 'pytz'],
       enabled: true,
+      schedule: 'after 5am',
+      minimumReleaseAge: '0',
+      automerge: true,
+    },
+    /** Automerge security updates */
+    {
+      matchUpdateTypes: ['security'],
       schedule: 'after 5am',
       minimumReleaseAge: '0',
       automerge: true,
