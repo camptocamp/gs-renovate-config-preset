@@ -31,13 +31,19 @@
         'camptocamp/jsonschema-gentypes',
         'jsonschema2md',
         'camptocamp/jsonschema2md',
-        'gs-renovate-config-preset',
-        'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
         'sbrunner/python-version-hook',
       ],
       groupName: 'CI dependencies',
       automerge: true,
+    },
+    /**
+     * Override CI dependencies grouping for Renovate config preset
+     * This rule must come after the matchFileNames rule to take precedence
+     */
+    {
+      matchDepNames: ['gs-renovate-config-preset', 'camptocamp/gs-renovate-config-preset'],
+      groupName: 'Renovate config preset',
     },
   ],
 }
