@@ -3,6 +3,13 @@
     /** Immediately update own maintained packages */
     {
       groupName: 'own packages',
+      matchDepNames: ['c2cwsgiutils', 'camptocamp/c2cwsgiutils', 'c2casgiutils', 'helm-common'],
+      schedule: 'before 6am',
+      minimumReleaseAge: '0',
+      automerge: true,
+    },
+    /** Don't group CI dependencies */
+    {
       matchDepNames: [
         'prospector',
         'prospector-dev/prospector',
@@ -11,16 +18,12 @@
         'prospector-profile-duplicated',
         'prospector-profile-utils',
         'c2cciutils',
-        'c2cwsgiutils',
-        'camptocamp/c2cwsgiutils',
-        'c2casgiutils',
         'tag-publish',
         'camptocamp/tag-publish',
         'jsonschema-gentypes',
         'camptocamp/jsonschema-gentypes',
         'jsonschema2md',
         'camptocamp/jsonschema2md',
-        'helm-common',
         'gs-renovate-config-preset',
         'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
