@@ -8,6 +8,17 @@
       minimumReleaseAge: '0',
       automerge: true,
     },
+    /**
+     * Create a dedicated group for Renovate config preset
+     * to always be able to update it easily
+     */
+    {
+      groupName: 'Renovate config preset',
+      matchDepNames: ['gs-renovate-config-preset', 'camptocamp/gs-renovate-config-preset'],
+      schedule: 'before 6am',
+      minimumReleaseAge: '0',
+      automerge: true,
+    },
     /** Don't group CI dependencies */
     {
       matchDepNames: [
@@ -24,8 +35,6 @@
         'camptocamp/jsonschema-gentypes',
         'jsonschema2md',
         'camptocamp/jsonschema2md',
-        'gs-renovate-config-preset',
-        'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
         'sbrunner/python-version-hook',
       ],

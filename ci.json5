@@ -31,8 +31,6 @@
         'camptocamp/jsonschema-gentypes',
         'jsonschema2md',
         'camptocamp/jsonschema2md',
-        'gs-renovate-config-preset',
-        'camptocamp/gs-renovate-config-preset',
         'sbrunner/hooks',
         'sbrunner/python-version-hook',
       ],
