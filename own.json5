@@ -8,6 +8,11 @@
       minimumReleaseAge: '0',
       automerge: true,
     },
+    /** Replace deprecated Prospector repository */
+    {
+      matchDepNames: ['PyCQA/prospector', 'landscape/prospector'],
+      replacementName: 'prospector-dev/prospector',
+    },
     /** Don't group CI dependencies */
     {
       matchDepNames: [
