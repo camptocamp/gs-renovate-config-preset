@@ -33,10 +33,5 @@
       matchDepNames: ['python'],
       enabled: false,
     },
-    /** Temporarily disable updates of `pylint` to version 4.x to avoid issues with `pylint-django` */
-    {
-      matchDepNames: ['pylint'],
-      allowedVersions: '!/^4\\./',
-    },
   ],
 }
