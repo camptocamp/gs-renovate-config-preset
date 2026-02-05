@@ -20,6 +20,7 @@
     /** Packages published very recently are not pushed to stabilization branches for security reasons */
     {
       matchBaseBranches: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^int-.*$/'],
+      matchPackageNames: ['!c2cciutils', '!tag-publish', '!camptocamp/tag-publish'],
       minimumReleaseAge: '7 days',
     },
     /** Don't update Python packages that contain types */
