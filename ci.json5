@@ -36,6 +36,7 @@
       ],
       groupName: 'CI dependencies',
       automerge: true,
+      separateMajorMinor: false,
     },
     /**
      * Override CI dependencies grouping for Renovate config preset
