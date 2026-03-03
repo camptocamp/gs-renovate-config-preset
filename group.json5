@@ -4,6 +4,13 @@
     {
       groupName: 'all patch/minor versions',
       matchUpdateTypes: ['patch', 'minor'],
+      baseBranchPatterns: ['/^master$/', '/^main$/', '/^test$/', '/^int-.*/'],
+      automerge: true,
+    },
+    {
+      groupName: 'all patch/minor versions',
+      matchUpdateTypes: ['patch'],
+      baseBranchPatterns: ['!/^master$/', '!/^main$/', '!/^test$/', '!/^int-.*$/'],
       automerge: true,
     },
   ],
