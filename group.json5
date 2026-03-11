@@ -10,7 +10,7 @@
     {
       groupName: 'all patch versions',
       matchUpdateTypes: ['patch'],
-      baseBranchPatterns: ['!master', '!main', '!test', '!int-*'],
+      baseBranchPatterns: ['^(?!(master|main|test|int-.*)$)'],
       automerge: true,
     },
   ],
