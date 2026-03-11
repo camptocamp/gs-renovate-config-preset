@@ -2,7 +2,7 @@
   packageRules: [
     /** Accept only the patch on stabilization branches */
     {
-      baseBranchPatterns: ['!master', '!main', '!test', '!int-*'],
+      baseBranchPatterns: ['^(?!(master|main|test|int-.*)$)'],
       matchUpdateTypes: [
         'major',
         'minor',
@@ -18,13 +18,13 @@
     },
     /** Packages published very recently are not pushed to stabilization branches for security reasons */
     {
-      baseBranchPatterns: ['!master', '!main', '!test', '!int-*'],
+      baseBranchPatterns: ['^(?!(master|main|test|int-.*)$)'],
       matchPackageNames: ['!c2cciutils', '!tag-publish', '!camptocamp/tag-publish'],
       minimumReleaseAge: '7 days',
     },
     /** Don't update Python packages that contain types */
     {
-      baseBranchPatterns: ['!master', '!main', '!test', '!int-*'],
+      baseBranchPatterns: ['^(?!(master|main|test|int-.*)$)'],
       matchDepNames: ['types-*'],
       matchDatasources: ['pypi'],
       enabled: false,
