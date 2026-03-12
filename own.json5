@@ -4,7 +4,7 @@
     {
       groupName: 'own packages',
       matchDepNames: ['c2cwsgiutils', 'camptocamp/c2cwsgiutils', 'c2casgiutils', 'helm-common'],
-      schedule: 'before 6am',
+      schedule: ['before 6am'],
       minimumReleaseAge: '0',
       automerge: true,
     },
@@ -34,7 +34,7 @@
         'sbrunner/hooks',
         'sbrunner/python-version-hook',
       ],
-      schedule: 'before 6am',
+      schedule: ['before 6am'],
       minimumReleaseAge: '0',
       automerge: true,
     },

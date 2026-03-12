@@ -10,14 +10,14 @@
       groupName: 'security packages',
       matchDepNames: ['cryptography', 'pyOpenSSL', 'pyopenssl', 'certifi', 'pytz'],
       enabled: true,
-      schedule: 'after 5am',
+      schedule: ['before 6am'],
       minimumReleaseAge: '0',
       automerge: true,
     },
     /** Automerge security updates */
     {
       matchUpdateTypes: ['security'],
-      schedule: 'after 5am',
+      schedule: ['before 6am'],
       minimumReleaseAge: '0',
       automerge: true,
     },
