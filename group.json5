@@ -2,14 +2,15 @@
   packageRules: [
     /** Group and auto merge the patch updates */
     {
-      groupName: 'all patch versions',
-      matchUpdateTypes: ['patch'],
-      automerge: true,
-    },
-    {
       groupName: 'all patch/minor versions',
       matchUpdateTypes: ['patch', 'minor'],
       baseBranchPatterns: ['master', 'main', 'test', 'int-*'],
+      automerge: true,
+    },
+    {
+      groupName: 'all patch versions',
+      matchUpdateTypes: ['patch'],
+      baseBranchPatterns: ['^(?!(master|main|test|int-.*)$)'],
       automerge: true,
     },
   ],
