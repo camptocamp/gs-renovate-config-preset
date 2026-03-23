@@ -7,6 +7,7 @@
   prHourlyLimit: 0,
   prConcurrentLimit: 0,
   semanticCommits: 'disabled',
+  minimumReleaseAge: '7 days',
   html: {
     fileMatch: ['\\.html?$', '\\.html?.mako$'],
   },
