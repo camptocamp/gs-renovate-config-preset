@@ -16,6 +16,7 @@
     /** Group and auto merge dependencies used to check, build, and publish the project */
     {
       matchDepNames: [
+        /* Python */
         'poetry',
         'poetry-.*',
         'prospector',
@@ -25,21 +26,24 @@
         'mypy',
         'ty',
         'pyrefly',
+        /* CI */
         'c2cciutils',
         'tag-publish',
-        'camptocamp/tag-publish',
-        'jsonschema-gentypes',
-        'camptocamp/jsonschema-gentypes',
-        'jsonschema2md',
-        'camptocamp/jsonschema2md',
-        'sbrunner/hooks',
-        'sbrunner/python-version-hook',
+        /* JavaScript */
         'vite',
         '@vitejs/*',
         'vite-plugin-*',
         'fs-extra',
         'minify',
         'sass-embedded',
+        'eslint',
+        'eslint-plugin-*',
+        'typescript',
+        '@typescript-eslint/*',
+        'storybook',
+        '@storybook/*',
+        'chromatic',
+        '@chromatic-com/*',
       ],
       groupName: 'CI dependencies',
       automerge: true,
