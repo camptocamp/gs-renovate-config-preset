@@ -13,7 +13,7 @@
       groupName: 'CI dependencies',
       automerge: true,
     },
-    /** Group and auto merge the Prospector and Poetry dependencies */
+    /** Group and auto merge dependencies used to check, build, and publish the project */
     {
       matchDepNames: [
         'poetry',
