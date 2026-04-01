@@ -1,8 +1,9 @@
 {
   packageRules: [
-    /** Group the dev dependency update */
+    /** Group Python dev dependency updates */
     {
       matchDepTypes: ['devDependencies'],
+      matchDatasources: ['pypi'],
       groupName: 'CI dependencies',
       automerge: true,
     },
@@ -33,6 +34,12 @@
         'camptocamp/jsonschema2md',
         'sbrunner/hooks',
         'sbrunner/python-version-hook',
+        'vite',
+        '@vitejs/*',
+        'vite-plugin-*',
+        'fs-extra',
+        'minify',
+        'sass-embedded',
       ],
       groupName: 'CI dependencies',
       automerge: true,
