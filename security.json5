@@ -21,5 +21,17 @@
       minimumReleaseAge: '0',
       automerge: true,
     },
+    /** Force upgrade for packages with a dependency on a package with a CVE */
+    /** Force pytest-asyncio to at least 1.3.0 due to its dependency on a vulnerable pytest version */
+    {
+      groupName: 'security packages',
+      matchDepNames: ['pytest-asyncio'],
+      matchCurrentVersion: '<1.3.0',
+      allowedVersions: '1.3.0',
+      enabled: true,
+      schedule: ['before 6am'],
+      minimumReleaseAge: '0',
+      automerge: true,
+    },
   ],
 }
