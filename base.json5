@@ -1,5 +1,5 @@
 {
-  extends: ['config:recommended'],
+  extends: ['config:recommended', 'helpers:pinGitHubActionDigestsToSemver'],
   timezone: 'Europe/Zurich',
   schedule: ['after 5pm on the last day of the month', 'on the first day of the month'],
   labels: ['dependencies'],
@@ -17,10 +17,6 @@
     schedule: ['after 5pm on the last day of the month', 'on the first day of the month'],
   },
   packageRules: [
-    /** Pin GitHub `action` digests with full SemVer comments */
-    {
-      extends: ['helpers:pinGitHubActionDigestsToSemver'],
-    },
     /** Only LTS version of Node */
     {
       matchDepNames: ['node'],
