@@ -5,7 +5,7 @@
       groupName: 'own packages',
       matchDepNames: ['c2cwsgiutils', 'camptocamp/c2cwsgiutils', 'c2casgiutils', 'helm-common'],
       schedule: ['before 6am'],
-      minimumReleaseAge: '0',
+      minimumReleaseAge: '1 day',
       automerge: true,
     },
     /** Replace deprecated Prospector repository */
@@ -35,7 +35,7 @@
         'sbrunner/python-version-hook',
       ],
       schedule: ['before 6am'],
-      minimumReleaseAge: '0',
+      minimumReleaseAge: '1 day',
       automerge: true,
     },
   ],
