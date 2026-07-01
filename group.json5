@@ -6,5 +6,12 @@
       matchUpdateTypes: ['patch', 'minor'],
       automerge: true,
     },
+    /** Group and auto merge the version pinning */
+    {
+      groupName: 'Pin dependencies',
+      matchUpdateTypes: ['pin', 'pinDigest'],
+      automerge: true,
+      schedule: ['before 6am'],
+    },
   ],
 }
