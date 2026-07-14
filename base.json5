@@ -20,19 +20,12 @@
     /** Only LTS version of Node */
     {
       matchDepNames: ['node'],
-      allowedVersions: '/[13579]$/',
-      enabled: false,
+      allowedVersions: '/^[02468]\\d*$/',
     },
     /** Only LTS Ubuntu versions */
     {
       matchPackageNames: ['ubuntu'],
-      enabled: false,
-      allowedVersions: '/\.10$/',
-    },
-    {
-      matchPackageNames: ['ubuntu'],
-      enabled: false,
-      allowedVersions: '/.*[13579]\.04$/',
+      allowedVersions: '/^[02468]\\d\\.04$/',
     },
   ],
 }
