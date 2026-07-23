@@ -17,6 +17,15 @@
       ],
       enabled: false,
     },
+    /** Allow c2casgiutils to update to 1.0.0 on stabilization branches */
+    {
+      matchBaseBranches: ['!master', '!main', '!test', '!int-*'],
+      matchDepNames: ['c2casgiutils'],
+      matchCurrentVersion: '<1.0.0',
+      allowedVersions: '<=1.0.0',
+      enabled: true,
+      schedule: ['before 6am'],
+    },
     /** Packages published very recently are not pushed to stabilization branches for security reasons */
     {
       matchBaseBranches: ['!master', '!main', '!test', '!int-*'],
