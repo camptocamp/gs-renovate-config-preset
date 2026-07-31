@@ -17,10 +17,17 @@
     schedule: ['after 5pm on the last day of the month', 'on the first day of the month'],
   },
   packageRules: [
-    /** Only LTS version of Node */
+    /** Only LTS major version of Node in .nvmrc */
     {
+      matchDatasources: ['node-version'],
       matchDepNames: ['node'],
       allowedVersions: '/^[02468]\\d*$/',
+    },
+    /** Only LTS version of Node Docker image (x.y.z format) */
+    {
+      matchDatasources: ['docker'],
+      matchDepNames: ['node'],
+      allowedVersions: '/^[02468]\\d+\\.\\d+\\.\\d+$/',
     },
     /** Only LTS Ubuntu versions */
     {
