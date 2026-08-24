@@ -4,6 +4,7 @@
     {
       matchDatasources: ['docker'],
       versioning: 'loose',
+      minimumReleaseAge: '1 day',
     },
     /** Don't have Redis versions like 32bit-stretch */
     {
