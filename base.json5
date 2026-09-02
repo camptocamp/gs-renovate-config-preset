@@ -22,18 +22,18 @@
     {
       matchDatasources: ['node-version'],
       matchDepNames: ['node'],
-      allowedVersions: '/^[02468]\\d*$/',
+      allowedVersions: '/^\\d+[02468]*$/',
     },
     /** Only LTS version of Node Docker image (x.y.z format) */
     {
       matchDatasources: ['docker'],
       matchDepNames: ['node'],
-      allowedVersions: '/^[02468]\\d+\\.\\d+\\.\\d+$/',
+      allowedVersions: '/^\\d+[02468]\\.\\d+\\.\\d+$/',
     },
     /** Only LTS Ubuntu versions */
     {
       matchPackageNames: ['ubuntu'],
-      allowedVersions: '/^[02468]\\d\\.04$/',
+      allowedVersions: '/^\\d[02468]\\.04$/',
     },
   ],
 }
