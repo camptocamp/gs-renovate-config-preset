@@ -38,5 +38,10 @@
       minimumReleaseAge: '1 day',
       automerge: true,
     },
+    /** Wait 4 days before updating tag-publish */
+    {
+      matchDepNames: ['tag-publish', 'camptocamp/tag-publish'],
+      minimumReleaseAge: '4 days',
+    },
   ],
 }
