@@ -17,6 +17,13 @@
       ],
       enabled: false,
     },
+    /** Update tag-publish on all branches, it's the tool used to publish the releases */
+    {
+      matchBaseBranches: ['!master', '!main', '!test', '!int-*'],
+      matchDepNames: ['tag-publish', 'camptocamp/tag-publish'],
+      matchUpdateTypes: ['minor', 'patch', 'pinDigest', 'digest'],
+      enabled: true,
+    },
     /** Allow c2casgiutils to update to 1.0.0 on stabilization branches */
     {
       matchBaseBranches: ['!master', '!main', '!test', '!int-*'],
